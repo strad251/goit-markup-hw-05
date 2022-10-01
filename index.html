@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="page-header">
     <div class="container nav-cont">
       <nav class="flex">
@@ -32,14 +33,14 @@
       <ul class="flex col-gap-header nav-address">
         <li>
           <a class="flex nav-address-link" href="mailto:info@devstudio.com">
-            <svg class="envelope">
+            <svg class="envelope" width="16px" height="12px">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li>
           <a class="flex nav-address-link" href="tel:+380961111111">
-            <svg class="smartphone">
+            <svg class="smartphone" width="10px" height="16px">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -49,13 +50,14 @@
   </header>
 
   <main>
+    <!-- SECTION HERO -->
     <section class="section-hero">
       <div class="container">
         <h1 class="page-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="btn btn-main" type="button">Замовити послугу</button>
+        <button class="btn btn-main" data-modal-open type="button">Замовити послугу</button>
       </div>
     </section>
-
+    <!-- SECTION SPECIALTY -->
     <section class="section section-specialty">
       <div class="container">
         <h2 class="section-title visually-hidden">Наші особливості</h2>
@@ -107,7 +109,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- SECTION WHAT WE DO -->
     <section class="section section-what">
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
@@ -127,6 +129,7 @@
                 <p>Мобільні додатки</p>
               </div>
             </div>
+
           </li>
           <li>
             <div class="what-box">
@@ -140,7 +143,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- SECTION TEAM -->
     <section class="section section-team">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
@@ -296,7 +299,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- SECTION CLIENTS -->
     <section class="section clients">
       <div class="container">
         <h2 class="section-title">Постійні клієнти</h2>
@@ -347,16 +350,21 @@
       </div>
     </section>
   </main>
-
-  <footer class="page-footer flex">
+  <!-- FOOTER -->
+  <footer class="page-footer ">
     <div class="container footer-flex">
       <div>
         <a class="link logo footer-logo" href="#"><span class="logo-color">Web</span>Studio</a>
         <address class="address-footer">
           <p class="address-margin">м. Київ, пр-т Лесі Українки, 26</p>
           <ul>
-            <li><a class="company-address address-margin" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="company-address" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li>
+              <a class="link-footer company-address address-margin"
+                href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="link-footer company-address" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -395,7 +403,17 @@
       </div>
     </div>
   </footer>
-
+  <!-- MODAL -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close>
+        <svg class="icon-close">
+          <use href="/images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

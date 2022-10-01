@@ -33,14 +33,14 @@
       <ul class="flex col-gap-header nav-address">
         <li>
           <a class="flex nav-address-link" href="mailto:info@devstudio.com">
-            <svg class="envelope">
+            <svg class="envelope" width="16px" height="12px">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li>
           <a class="flex nav-address-link" href="tel:+380961111111">
-            <svg class="smartphone">
+            <svg class="smartphone" width="10px" height="16px">
               <use href="images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -51,7 +51,7 @@
 
   <main>
     <section class="section">
-      <div class="container">
+      <ul class="container">
         <h1 class="page-title visually-hidden">Портфоліо</h1>
         <ul class="flex col-gap-portfolio portfolio-ul">
           <li>
@@ -73,17 +73,24 @@
 
 
         <ul class="list-style portfolio">
-          <li class="portfolio-item">
-            <a href="#">
-              <img src="images/portfolio/img.jpg" alt="Зображення веб-сайту" width="370px">
+          <li>
+            <a class="portfolio-link" href="#">
+              <div class="portfolio-img">
+                <img src="images/portfolio/img.jpg" alt="Зображення веб-сайту" width="370px">
+                <div class="overlay">
+                  <p class="hover-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Технокряк</h2>
                 <p class="portfolio-description">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img1.jpg" alt="Дизайн постеру" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Постер New Orlean vs Golden Star</h2>
@@ -91,8 +98,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img2.jpg" alt="Логотип ресторану Seafood" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Ресторан Seafood</h2>
@@ -100,8 +107,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img3.jpg" alt="Зображення навушників" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Проєкт Prime</h2>
@@ -109,8 +116,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img4.jpg" alt="Зображення коробок" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Проєкт Boxes</h2>
@@ -118,8 +125,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img5.jpg" alt="Сторінка веб-сайту" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Inspiration has no Borders</h2>
@@ -127,8 +134,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img6.jpg" alt="Дизайн Видання Limited Edition" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Видання Limited Edition</h2>
@@ -136,8 +143,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img7.jpg" alt="Макет лейблу" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Проєкт LAB</h2>
@@ -145,8 +152,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="#">
+          <li>
+            <a class="portfolio-link" href="#">
               <img src="images/portfolio/img8.jpg" alt="Відкритий веб-додаток" width="370px">
               <div class="portfolio-card">
                 <h2 class="portfolio-project-title">Growing Business</h2>
@@ -156,7 +163,7 @@
           </li>
         </ul>
 
-      </div>
+        </div>
     </section>
   </main>
 
@@ -167,8 +174,13 @@
         <address class="address-footer">
           <p class="address-margin">м. Київ, пр-т Лесі Українки, 26</p>
           <ul>
-            <li><a class="company-address address-margin" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="company-address" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li>
+              <a class="link-footer company-address address-margin"
+                href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="link-footer company-address" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
